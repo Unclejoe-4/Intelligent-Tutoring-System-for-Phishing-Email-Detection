@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/owola/ontologies/2025/10/test"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/owola/ontologies/2025/10/test">
+    <Prefix name="" IRI="http://www.semanticweb.org/owola/ontologies/2025/10/test/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Testing ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AnalysisOutput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthenticationResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DKIMPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DKIMResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DMARCPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DMARCResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisplayName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisplayNameSpoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainMismatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailHeader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FailedAuthentication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FromField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeaderField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegitimateIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatchingDomains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhishingIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReceivedPathField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReplyToField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReplyToMismatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReturnPathField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReturnPathMismatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReturnToMismatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SPFPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SPFResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SenderDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SenderEmailAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SenderInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubjectField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuspiciousPattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuspiciousReceivedChain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnusualSenderDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contradicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHeader"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegitimateIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSenderInfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAuthenticatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pointsToDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producesOutput"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#authenticationStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#displayNameText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#domainName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#emailAddressText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fieldValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSuspicious"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#receivedChainCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#riskScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Domain_example_com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Domain_random_org"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Email_Example1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FromField_Ex1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplyTo_Ex1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReturnPath_Ex1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#DKIMPass"/>
+        <Class IRI="#LegitimateIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DKIMResult"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DMARCPass"/>
+        <Class IRI="#LegitimateIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DMARCResult"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisplayName"/>
+        <Class IRI="#SenderInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisplayNameSpoofing"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainMismatch"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalDomain"/>
+        <Class IRI="#DomainEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FailedAuthentication"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FromField"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegitimateIndicator"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatchingDomains"/>
+        <Class IRI="#LegitimateIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhishingIndicator"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryDomain"/>
+        <Class IRI="#DomainEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReceivedPathField"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReplyToField"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReplyToMismatch"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReturnPathField"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReturnPathMismatch"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReturnToMismatch"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SPFPass"/>
+        <Class IRI="#LegitimateIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SPFResult"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SenderDomain"/>
+        <Class IRI="#SenderInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SenderEmailAddress"/>
+        <Class IRI="#SenderInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubDomain"/>
+        <Class IRI="#DomainEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectField"/>
+        <Class IRI="#EmailHeader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuspiciousReceivedChain"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnusualSenderDomain"/>
+        <Class IRI="#PhishingIndicator"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#PrimaryDomain"/>
+        <NamedIndividual IRI="#Domain_example_com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalDomain"/>
+        <NamedIndividual IRI="#Domain_random_org"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Email"/>
+        <NamedIndividual IRI="#Email_Example1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FromField"/>
+        <NamedIndividual IRI="#FromField_Ex1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReplyToField"/>
+        <NamedIndividual IRI="#ReplyTo_Ex1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnPathField"/>
+        <NamedIndividual IRI="#ReturnPath_Ex1"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fieldValue"/>
+        <NamedIndividual IRI="#FromField_Ex1"/>
+        <Literal>admin@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fieldValue"/>
+        <NamedIndividual IRI="#ReplyTo_Ex1"/>
+        <Literal>support@random.org</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contradicts"/>
+        <Class IRI="#HeaderField"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDomain"/>
+        <Class IRI="#SenderInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasField"/>
+        <Class IRI="#EmailHeader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHeader"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegitimateIndicator"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSenderInfo"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAuthenticatedBy"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pointsToDomain"/>
+        <Class IRI="#HeaderField"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producesOutput"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contradicts"/>
+        <Class IRI="#HeaderField"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDomain"/>
+        <Class IRI="#DomainEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasField"/>
+        <Class IRI="#HeaderField"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHeader"/>
+        <Class IRI="#EmailHeader"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <Class IRI="#PhishingIndicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegitimateIndicator"/>
+        <Class IRI="#LegitimateIndicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSenderInfo"/>
+        <Class IRI="#SenderInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAuthenticatedBy"/>
+        <Class IRI="#AuthenticationResult"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pointsToDomain"/>
+        <Class IRI="#DomainEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producesOutput"/>
+        <Class IRI="#AnalysisOutput"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#authenticationStatus"/>
+        <Class IRI="#AuthenticationResult"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#displayNameText"/>
+        <Class IRI="#DisplayName"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#domainName"/>
+        <Class IRI="#DomainEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#emailAddressText"/>
+        <Class IRI="#SenderEmailAddress"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fieldValue"/>
+        <Class IRI="#HeaderField"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isSuspicious"/>
+        <Class IRI="#PhishingIndicator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#receivedChainCount"/>
+        <Class IRI="#ReceivedPathField"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#riskScore"/>
+        <Class IRI="#Email"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#authenticationStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#displayNameText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#domainName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#emailAddressText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fieldValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSuspicious"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#receivedChainCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#riskScore"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Display-Name Spoofing</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Email"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSenderInfo"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#DisplayName"/>
+                <Variable IRI="/dn"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SenderEmailAddress"/>
+                <Variable IRI="/se"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#displayNameText"/>
+                <Variable IRI="/dn"/>
+                <Variable IRI="/name"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#emailAddressText"/>
+                <Variable IRI="/se"/>
+                <Variable IRI="/email"/>
+            </DataPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/name"/>
+                <Variable IRI="/email"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#DisplayNameSpoofing"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Unusual Sender Domain (external domain)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Email"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSenderInfo"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SenderDomain"/>
+                <Variable IRI="/d"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDomain"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/d"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#ExternalDomain"/>
+                <Variable IRI="/d"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#UnusualSenderDomain"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Domain Mismatch SPF</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Email"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasField"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/f"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasField"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#FromField"/>
+                <Variable IRI="/f"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ReplyToField"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#fieldValue"/>
+                <Variable IRI="/f"/>
+                <Variable IRI="/fv"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#fieldValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/rv"/>
+            </DataPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/fv"/>
+                <Variable IRI="/rv"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#DomainMismatch"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Return-Path Mismatch (From ≠ Return-Path)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Email"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasField"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/f1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasField"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/f2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#FromField"/>
+                <Variable IRI="/f1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ReturnPathField"/>
+                <Variable IRI="/f2"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#fieldValue"/>
+                <Variable IRI="/f1"/>
+                <Variable IRI="/fv"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#fieldValue"/>
+                <Variable IRI="/f2"/>
+                <Variable IRI="/rpv"/>
+            </DataPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/fv"/>
+                <Variable IRI="/rpv"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ReturnPathMismatch"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Classify Email as Phishing if ANY Indicator Exists</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndicator"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/i"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Email"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#AnalysisOutput"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Classify Email as Legitimate if all checks pass</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasLegitimateIndicator"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Email"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#AnalysisOutput"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
